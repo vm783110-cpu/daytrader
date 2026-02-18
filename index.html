@@ -15,15 +15,14 @@ t.src=v;s=b.getElementsByTagName(e)[0];
 s.parentNode.insertBefore(t,s)}(window, document,'script',
 'https://connect.facebook.net/en_US/fbevents.js');
 
-fbq('init', '4281746112065823'); 
+fbq('init', '2396805344119844'); 
 fbq('track', 'PageView');
 </script>
 
 <noscript>
 <img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=4281746112065823&ev=PageView&noscript=1"/>
+src="https://www.facebook.com/tr?id=2396805344119844&ev=PageView&noscript=1"/>
 </noscript>
-
 <style>
 body{
 margin:0;
@@ -141,7 +140,7 @@ document.getElementById("timer").innerHTML =
 if(seconds <= 0){
 redirected = true;
 clearInterval(countdown);
-fbq('track','Lead'); // This will now fire for the new Pixel ID
+fbq('track','Lead'); 
 window.location.replace(link);
 }
 
@@ -150,7 +149,7 @@ window.location.replace(link);
 function redirectNow(){
 if(!redirected){
 redirected = true;
-fbq('track','Lead'); // This will now fire for the new Pixel ID
+fbq('track','Lead'); 
 window.location.replace(link);
 }
 }
