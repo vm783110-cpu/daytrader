@@ -5,7 +5,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Day Trader</title>
 
-<!-- ✅ META PIXEL -->
 <script>
 !function(f,b,e,v,n,t,s)
 {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -16,13 +15,13 @@ t.src=v;s=b.getElementsByTagName(e)[0];
 s.parentNode.insertBefore(t,s)}(window, document,'script',
 'https://connect.facebook.net/en_US/fbevents.js');
 
-fbq('init', '1430886161861225'); 
+fbq('init', '4281746112065823'); 
 fbq('track', 'PageView');
 </script>
 
 <noscript>
 <img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=1430886161861225&ev=PageView&noscript=1"/>
+src="https://www.facebook.com/tr?id=4281746112065823&ev=PageView&noscript=1"/>
 </noscript>
 
 <style>
@@ -142,7 +141,7 @@ document.getElementById("timer").innerHTML =
 if(seconds <= 0){
 redirected = true;
 clearInterval(countdown);
-fbq('track','Lead');
+fbq('track','Lead'); // This will now fire for the new Pixel ID
 window.location.replace(link);
 }
 
@@ -151,7 +150,7 @@ window.location.replace(link);
 function redirectNow(){
 if(!redirected){
 redirected = true;
-fbq('track','Lead');
+fbq('track','Lead'); // This will now fire for the new Pixel ID
 window.location.replace(link);
 }
 }
